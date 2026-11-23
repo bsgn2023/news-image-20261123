@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>World News — Monday 23 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #e8e6e1; }
+  .page {
+    width: 1024px; height: 1024px;
+    margin: 0 auto; background: #fdfcf9;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1e293b; overflow: hidden;
+    padding: 26px 30px 22px 30px;
+    display: flex; flex-direction: column;
+  }
+  /* ---------- masthead ---------- */
+  .masthead {
+    background: #0f2a4a; color: #fff;
+    padding: 13px 24px 11px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 5px solid #c9a227;
+  }
+  .masthead .kicker { font-size: 13px; letter-spacing: 4px; color: #c9a227; font-weight: 700; }
+  .masthead h1 { font-family: Georgia, "Times New Roman", serif; font-size: 37px; line-height: 1.05; font-weight: 900; letter-spacing: 0.5px; }
+  .masthead .datebox { text-align: right; }
+  .masthead .datebox .day { font-size: 15px; letter-spacing: 2px; color: #c9a227; font-weight: 700; }
+  .masthead .datebox .date { font-family: Georgia, serif; font-size: 27px; font-weight: 900; line-height: 1.1; }
+  .masthead .datebox .sub { font-size: 12px; color: #b8c4d4; margin-top: 2px; }
+  /* ---------- lead story ---------- */
+  .lead {
+    display: flex; gap: 22px;
+    padding: 14px 4px 12px 4px;
+    border-bottom: 2px solid #0f2a4a;
+  }
+  .lead .lead-text { flex: 1; }
+  .lead .tag { display: inline-block; background: #b91c1c; color: #fff; font-size: 12px; font-weight: 800; letter-spacing: 2px; padding: 4px 10px; }
+  .lead h2 { font-family: Georgia, serif; font-size: 40px; line-height: 1.08; font-weight: 900; color: #0f2a4a; margin: 8px 0 7px 0; }
+  .lead p { font-size: 17px; line-height: 1.45; color: #334155; }
+  .lead .src { font-size: 12px; color: #64748b; margin-top: 9px; letter-spacing: 0.5px; }
+  .lead .art { width: 208px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  /* ---------- section label ---------- */
+  .seclabel { font-size: 13px; font-weight: 800; letter-spacing: 3px; color: #0f2a4a; margin: 12px 0 8px 0; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; }
+  .seclabel span { color: #b91c1c; }
+  /* ---------- top stories grid ---------- */
+  .topgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; }
+  .card { display: flex; gap: 12px; background: #fff; border: 1px solid #e2e8f0; border-top: 3px solid #0f2a4a; padding: 10px 12px; }
+  .card .icon { width: 58px; height: 58px; flex-shrink: 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+  .card h3 { font-family: Georgia, serif; font-size: 18.5px; line-height: 1.18; font-weight: 900; color: #0f2a4a; }
+  .card p { font-size: 13.5px; line-height: 1.38; color: #475569; margin-top: 4px; }
+  .card .src { font-size: 11px; color: #94a3b8; margin-top: 5px; letter-spacing: 0.4px; }
+  .card.wide { grid-column: 1 / -1; }
+  .card.wide h3 { font-size: 19px; }
+  /* icon background colours */
+  .ic-navy { background: #e0e9f5; } .ic-red { background: #fde8e8; } .ic-blue { background: #dbeafe; }
+  .ic-amber { background: #fef3c7; } .ic-teal { background: #ccfbf1; } .ic-slate { background: #e2e8f0; }
+  /* ---------- secondary list ---------- */
+  .second { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; }
+  .sitem { display: flex; gap: 10px; align-items: flex-start; }
+  .sitem .dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+  .sitem h4 { font-family: Georgia, serif; font-size: 15.5px; line-height: 1.22; font-weight: 900; color: #0f2a4a; }
+  .sitem p { font-size: 12.5px; line-height: 1.35; color: #475569; margin-top: 2px; }
+  .sitem .src { font-size: 10.5px; color: #94a3b8; margin-top: 2px; }
+  /* ---------- footer ---------- */
+  .footer { margin-top: auto; border-top: 2px solid #0f2a4a; padding-top: 8px; display: flex; justify-content: space-between; align-items: center; }
+  .footer .sources { font-size: 11.5px; color: #64748b; line-height: 1.45; max-width: 760px; }
+  .footer .tag2 { font-size: 12px; font-weight: 800; letter-spacing: 2px; color: #0f2a4a; text-align: right; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div>
+      <div class="kicker">THE WORLD IN ONE PAGE</div>
+      <h1>World News</h1>
+    </div>
+    <div class="datebox">
+      <div class="day">MONDAY</div>
+      <div class="date">23 November 2026</div>
+      <div class="sub">The day&#8217;s ten most important stories</div>
+    </div>
+  </div>
+
+  <!-- LEAD -->
+  <div class="lead">
+    <div class="lead-text">
+      <span class="tag">CLIMATE &middot; LEAD STORY</span>
+      <h2>COP31 collapses without a deal</h2>
+      <p>The UN climate summit in Antalya ends after record overtime with no agreement, as the EU and others refuse to endorse a pact that omits fossil fuels &mdash; the first major COP breakdown since 2009.</p>
+      <div class="src">Sources: CNN &middot; Reuters &middot; BBC</div>
+    </div>
+    <div class="art">
+      <!-- cracked globe -->
+      <svg width="196" height="150" viewBox="0 0 196 150" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="98" cy="75" r="66" fill="#dbeafe" stroke="#0f2a4a" stroke-width="3"/>
+        <ellipse cx="98" cy="75" rx="66" ry="26" fill="none" stroke="#0f2a4a" stroke-width="2"/>
+        <ellipse cx="98" cy="75" rx="26" ry="66" fill="none" stroke="#0f2a4a" stroke-width="2"/>
+        <path d="M32 75 H164" stroke="#0f2a4a" stroke-width="2" fill="none"/>
+        <path d="M98 18 L88 48 L104 62 L90 84 L102 104 L92 132" stroke="#b91c1c" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="60" cy="48" r="14" fill="#16a34a"/>
+        <circle cx="140" cy="104" r="12" fill="#16a34a"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="seclabel">TOP STORIES <span>&mdash; FIVE MORE</span></div>
+
+  <!-- TOP GRID -->
+  <div class="topgrid">
+    <div class="card">
+      <div class="icon ic-navy">
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 4 L38 9 V22 C38 31 31 38 22 41 C13 38 6 31 6 22 V9 Z" fill="#0f2a4a"/>
+          <path d="M22 12 L24.5 19 L32 19.5 L26.5 24 L28.5 31.5 L22 27.5 L15.5 31.5 L17.5 24 L12 19.5 L19.5 19 Z" fill="#c9a227"/>
+        </svg>
+      </div>
+      <div>
+        <h3>NATO meets after Russian missiles land in Poland</h3>
+        <p>The North Atlantic Council holds an emergency session in Brussels after Polish prosecutors confirm all three objects that fell on 20 Nov were Russian Kh-101 cruise missiles.</p>
+        <div class="src">Reuters &middot; AP</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon ic-blue">
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="14" width="32" height="22" rx="2" fill="#1d4ed8"/>
+          <rect x="6" y="14" width="32" height="6" fill="#0f2a4a"/>
+          <path d="M12 28 L18 34 L30 22" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="17" y="6" width="10" height="8" rx="1" fill="#0f2a4a"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Democrats win biggest House majority since 1992</h3>
+        <p>Chuck Hubbard&#8217;s win over Virginia Foxx in North Carolina gives Democrats at least 258 House seats, their largest majority since 1992.</p>
+        <div class="src">Reuters &middot; BBC &middot; AP</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon ic-amber">
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22" cy="22" r="19" fill="#b45309"/>
+          <path d="M22 10 L24.6 17.4 L32.5 17.8 L26.6 22.6 L28.7 30.4 L22 26.2 L15.3 30.4 L17.4 22.6 L11.5 17.8 L19.4 17.4 Z" fill="#fef3c7"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Mexico captures FBI most-wanted cartel boss</h3>
+        <p>Fausto Isidro Meza-Flores, known as &#8220;El Chapo Isidro,&#8221; is seized in Guasave, Sinaloa; 11 die in the firefight. The US had a $5m reward on him.</p>
+        <div class="src">Wall Street Journal &middot; AP &middot; CNN</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon ic-red">
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="4,26 10,26 13,14 18,34 22,20 26,30 30,22 34,26 40,26" fill="none" stroke="#b91c1c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 38 H38" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>M6.5 quake strikes deep under Vanuatu</h3>
+        <p>A magnitude 6.5 earthquake hits the Vanuatu region at 02:40 UTC, 601 km deep; no damage is reported, the USGS says.</p>
+        <div class="src">USGS &middot; Xinhua</div>
+      </div>
+    </div>
+
+    <div class="card wide">
+      <div class="icon ic-teal">
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 26 L14 26 L18 20 L26 20 L30 26 L38 26 L36 34 L8 34 Z" fill="#0f766e"/>
+          <rect x="18" y="10" width="8" height="8" fill="#0f766e"/>
+          <path d="M4 38 Q12 35 20 38 Q28 41 40 38" stroke="#0ea5a5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Tankers struck near the Strait of Hormuz</h3>
+        <p>UK maritime authorities report projectile strikes on tankers in the strait; Iran says a vessel hit a mine. Attacks on shipping are at their highest since the war began.</p>
+        <div class="src">AP &middot; UKMTO</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seclabel">ALSO TODAY</div>
+
+  <!-- SECONDARY -->
+  <div class="second">
+    <div class="sitem">
+      <div class="dot" style="background:#b91c1c"></div>
+      <div>
+        <h4>Boy, 7, pulled alive from rubble after strike near Kyiv</h4>
+        <p>A Russian drone hits a block of flats in Dymer; at least 8 are killed and rescuers search for the missing.</p>
+        <div class="src">BBC</div>
+      </div>
+    </div>
+    <div class="sitem">
+      <div class="dot" style="background:#0f766e"></div>
+      <div>
+        <h4>Drone boat hits Russian ship off Libya</h4>
+        <p>A suspected sea drone strikes the Russian corvette Merkury at the Benghazi naval base; 10 people are hurt.</p>
+        <div class="src">AP &middot; Reuters</div>
+      </div>
+    </div>
+    <div class="sitem">
+      <div class="dot" style="background:#b45309"></div>
+      <div>
+        <h4>Iran to ration electricity as grid reels</h4>
+        <p>Tehran will begin rationing power as officials warn the grid has been battered by US and Israeli strikes.</p>
+        <div class="src">RFE/RL</div>
+      </div>
+    </div>
+    <div class="sitem">
+      <div class="dot" style="background:#1d4ed8"></div>
+      <div>
+        <h4>Taiwan bans short-selling as stocks plunge</h4>
+        <p>Taiwan shares fall 17.5% in a week; the regulator bans short-selling at or below the flat price from today.</p>
+        <div class="src">Taiwan FSC</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="sources">Sources: CNN, Reuters, BBC, AP, Wall Street Journal, USGS, Xinhua, RFE/RL, UKMTO, Taiwan FSC. Events of Monday 23 November 2026, reported that day in any time zone.</div>
+    <div class="tag2">23 NOV 2026</div>
+  </div>
+
+</div>
+</body>
+</html>
